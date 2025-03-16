@@ -8,7 +8,7 @@
             <th>Room No.</th>
             <th>Check-In</th>
             <th>Check-Out</th>
-
+            <th>Remove</th>
         </tr>
     </thead>
     <tbody>
@@ -18,7 +18,7 @@
             <td>{{reservation.roomNumber}}</td>
             <td> {{reservation.checkInDate}} </td>
             <td>{{reservation.checkOutDate}}</td>
-
+            <td><button (click)="deleteReservation(reservation.id)">Delete</button></td>
         </tr>
     </tbody>
 </table>
