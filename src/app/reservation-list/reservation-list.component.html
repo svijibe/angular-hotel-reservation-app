@@ -18,6 +18,7 @@
             <td>{{reservation.roomNumber}}</td>
             <td> {{reservation.checkInDate}} </td>
             <td>{{reservation.checkOutDate}}</td>
+            <td><button [routerLink]="['/edit', reservation.id]">Edit</button></td>
             <td><button (click)="deleteReservation(reservation.id)">Delete</button></td>
         </tr>
     </tbody>
